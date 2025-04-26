@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nude Project - Tienda Oficial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #222;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+        }
+        h2 {
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Nude Project</h1>
+    <p>Ropa urbana para almas libres</p>
+</header>
+
+<nav>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#descuentos">Descuentos</a>
+</nav>
+
+<section id="catalogo">
+    <h2>Catálogo</h2>
+
+    <h3>Camisetas</h3>
+    <p>Explora nuestra colección de camisetas únicas.</p>
+
+    <h3>Abrigos</h3>
+    <p>La mejor selección de abrigos para cada temporada.</p>
+
+    <h3>Chaquetas</h3>
+    <p>Chaquetas diseñadas para destacar.</p>
+
+    <h3>Pantalones</h3>
+    <p>Comodidad y estilo en cada movimiento.</p>
+
+    <h3>Zapatos</h3>
+    <p>Calzado perfecto para cada paso.</p>
+
+    <h3>Accesorios</h3>
+    <p>Detalles que marcan la diferencia.</p>
+</section>
+
+<section id="descuentos">
+    <h2>Descuentos</h2>
+    <p>No te pierdas nuestras ofertas exclusivas de temporada.</p>
+</section>
+
+<footer>
+    <p>&copy; 2025 Nude Project - Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
