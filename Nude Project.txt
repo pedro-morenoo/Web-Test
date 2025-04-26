@@ -1,90 +1,194 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nude Project - Tienda Oficial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nude Project - Tienda Oficial</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f8f4f0;
+      margin: 0;
+      padding: 0;
+      color: #4b3f2f;
+    }
+    header {
+      background-color: #d7c4b5;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    nav {
+      background-color: #a68c76;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #f8f4f0;
+      text-decoration: underline;
+    }
+    .catalogo, .ofertas {
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #a68c76;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    .producto {
+      background-color: #ffffff;
+      border: 1px solid #e0d8d1;
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      text-align: center;
+      flex: 1 1 250px;
+      transition: box-shadow 0.3s;
+    }
+    .producto:hover {
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+    .producto img {
+      max-width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .productos-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    button {
+      background-color: #a68c76;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #8a715c;
+    }
+    footer {
+      background-color: #d7c4b5;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
 
 <header>
-    <h1>Nude Project</h1>
-    <p>Ropa urbana para almas libres</p>
+  <h1>Nude Project</h1>
+  <p>Ropa urbana para almas libres</p>
 </header>
 
 <nav>
-    <a href="#catalogo">Catálogo</a>
-    <a href="#descuentos">Descuentos</a>
+  <a href="#catalogo">Catálogo</a>
+  <a href="#ofertas">Ofertas</a>
 </nav>
 
-<section id="catalogo">
-    <h2>Catálogo</h2>
+<section id="catalogo" class="catalogo">
+  <h2>Catálogo</h2>
 
-    <h3>Camisetas</h3>
-    <p>Explora nuestra colección de camisetas únicas.</p>
+  <div class="productos-grid">
 
-    <h3>Abrigos</h3>
-    <p>La mejor selección de abrigos para cada temporada.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?tshirt,fashion" alt="Camiseta">
+      <h3>Camisetas</h3>
+      <p>Estilo minimalista con esencia urbana.</p>
+      <button>Ver Más</button>
+    </div>
 
-    <h3>Chaquetas</h3>
-    <p>Chaquetas diseñadas para destacar.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?coat,fashion" alt="Abrigo">
+      <h3>Abrigos</h3>
+      <p>Para que el frío nunca te detenga.</p>
+      <button>Ver Más</button>
+    </div>
 
-    <h3>Pantalones</h3>
-    <p>Comodidad y estilo en cada movimiento.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?jacket,streetwear" alt="Chaqueta">
+      <h3>Chaquetas</h3>
+      <p>Funcionalidad y diseño contemporáneo.</p>
+      <button>Ver Más</button>
+    </div>
 
-    <h3>Zapatos</h3>
-    <p>Calzado perfecto para cada paso.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?pants,streetwear" alt="Pantalón">
+      <h3>Pantalones</h3>
+      <p>Comodidad, estilo y versatilidad.</p>
+      <button>Ver Más</button>
+    </div>
 
-    <h3>Accesorios</h3>
-    <p>Detalles que marcan la diferencia.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?shoes,sneakers" alt="Zapatos">
+      <h3>Zapatos</h3>
+      <p>Pisa fuerte con Nude Project.</p>
+      <button>Ver Más</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?accessories,fashion" alt="Accesorios">
+      <h3>Accesorios</h3>
+      <p>El detalle que completa tu outfit.</p>
+      <button>Ver Más</button>
+    </div>
+
+  </div>
 </section>
 
-<section id="descuentos">
-    <h2>Descuentos</h2>
-    <p>No te pierdas nuestras ofertas exclusivas de temporada.</p>
+<section id="ofertas" class="ofertas">
+  <h2>Ofertas Especiales</h2>
+
+  <div class="productos-grid">
+
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?tshirt,streetwear" alt="Oferta Camiseta">
+      <h3>Camiseta Oversized</h3>
+      <p><del>39,99€</del> <strong>29,99€</strong></p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?jacket,men" alt="Oferta Chaqueta">
+      <h3>Chaqueta Essential</h3>
+      <p><del>89,99€</del> <strong>69,99€</strong></p>
+      <button>Comprar</button>
+    </div>
+
+    <div class="producto">
+      <img src="https://source.unsplash.com/300x300/?pants,urban" alt="Oferta Pantalón">
+      <h3>Pantalón Cargo</h3>
+      <p><del>74,99€</del> <strong>54,99€</strong></p>
+      <button>Comprar</button>
+    </div>
+
+  </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Nude Project - Todos los derechos reservados.</p>
+  <p>&copy; 2025 Nude Project - Todos los derechos reservados.</p>
 </footer>
 
 </body>
 </html>
+
