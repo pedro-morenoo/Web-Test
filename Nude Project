@@ -1,89 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nude Project - Tienda Oficial</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #000;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            background-color: #222;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #ccc;
-            padding-bottom: 10px;
-        }
-        footer {
-            background-color: #000;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-            margin-top: 30px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nude Project - Streetwear</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>Nude Project</h1>
-    <p>Ropa urbana para almas libres</p>
+  <h1>NUDE PROJECT</h1>
+  <nav>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#ofertas">Ofertas</a>
+  </nav>
 </header>
 
-<nav>
-    <a href="#catalogo">Catálogo</a>
-    <a href="#descuentos">Descuentos</a>
-</nav>
-
 <section id="catalogo">
-    <h2>Catálogo</h2>
+  <h2>Catálogo</h2>
 
-    <h3>Camisetas</h3>
-    <p>Explora nuestra colección de camisetas únicas.</p>
+  <div class="productos-grid">
+    <!-- Productos -->
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?tshirt,streetwear" alt="Camiseta">
+      <div class="producto-contenido">
+        <h3>Camisetas</h3>
+        <p>Estilo relajado y diseño atemporal.</p>
+        <button>Ver Más</button>
+      </div>
+    </div>
 
-    <h3>Abrigos</h3>
-    <p>La mejor selección de abrigos para cada temporada.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?coat,urban" alt="Abrigos">
+      <div class="producto-contenido">
+        <h3>Abrigos</h3>
+        <p>Protección y elegancia para el invierno.</p>
+        <button>Ver Más</button>
+      </div>
+    </div>
 
-    <h3>Chaquetas</h3>
-    <p>Chaquetas diseñadas para destacar.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?jacket,streetstyle" alt="Chaquetas">
+      <div class="producto-contenido">
+        <h3>Chaquetas</h3>
+        <p>Comodidad premium para la calle.</p>
+        <button>Ver Más</button>
+      </div>
+    </div>
 
-    <h3>Pantalones</h3>
-    <p>Comodidad y estilo en cada movimiento.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?pants,urbanwear" alt="Pantalones">
+      <div class="producto-contenido">
+        <h3>Pantalones</h3>
+        <p>Streetwear que se adapta a tu ritmo.</p>
+        <button>Ver Más</button>
+      </div>
+    </div>
 
-    <h3>Zapatos</h3>
-    <p>Calzado perfecto para cada paso.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?sneakers,shoes" alt="Zapatos">
+      <div class="producto-contenido">
+        <h3>Zapatos</h3>
+        <p>Camina con identidad y personalidad.</p>
+        <button>Ver Más</button>
+      </div>
+    </div>
 
-    <h3>Accesorios</h3>
-    <p>Detalles que marcan la diferencia.</p>
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?accessories,streetwear" alt="Accesorios">
+      <div class="producto-contenido">
+        <h3>Accesorios</h3>
+        <p>Detalles que marcan la diferencia.</p>
+        <button>Ver Más</button>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="descuentos">
-    <h2>Descuentos</h2>
-    <p>No te pierdas nuestras ofertas exclusivas de temporada.</p>
+<section id="ofertas">
+  <h2>Ofertas Exclusivas</h2>
+
+  <div class="productos-grid">
+
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?tshirt,men" alt="Camiseta Oversized">
+      <div class="producto-contenido">
+        <h3>Camiseta Oversized Nude</h3>
+        <p><span class="oferta">49,99€</span> <span class="precio">34,99€</span></p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?jacket,man" alt="Chaqueta Essential">
+      <div class="producto-contenido">
+        <h3>Chaqueta Essential Beige</h3>
+        <p><span class="oferta">99,99€</span> <span class="precio">69,99€</span></p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="https://source.unsplash.com/600x600/?pants,man" alt="Pantalón Cargo">
+      <div class="producto-contenido">
+        <h3>Pantalón Cargo Sand</h3>
+        <p><span class="oferta">89,99€</span> <span class="precio">59,99€</span></p>
+        <button>Comprar</button>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <footer>
-    <p>&copy; 2025 Nude Project - Todos los derechos reservados.</p>
+  <p>&copy; 2025 Nude Project - Streetwear para almas libres.</p>
 </footer>
 
 </body>
